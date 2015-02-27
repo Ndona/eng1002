@@ -1,0 +1,101 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><title>000037</title><script>
+//var teamName = "team-??";
+//document.write("Hello from " + teamName + "!");
+
+var days = 19
+var daysPerWeek = 7;
+var weeks = days / daysPerWeek;
+
+var currentNumber = 0;
+while (currentNumber <= 12)
+{
+    //document.write("alert " + currentNumber + "<p>");
+	document.write("The number after " + currentNumber + " is " + (currentNumber+1) + "<p>");
+
+    currentNumber = currentNumber + 1;	
+
+}
+
+
+
+
+/*var year = prompt("Please Enter the year of birth: ", 1984);
+var now = 2014;
+var age = now - year;
+document.write('They are either ' + age + ' or ' + (age - 1) + ' years');
+
+*/
+
+
+var age = 28;
+var maxAge = 100;
+var numPerDay = 2;
+var totalNeeded = (numPerDay * 365) * (maxAge - age);
+var message = 'You will need ' + totalNeeded + ' cups of coffee to last you until the ripe old age of ' + maxAge;
+document.write(message);
+
+
+/*
+var num1 = prompt("Insert The first number: ", 10);
+var num2 = prompt("Insert The first number: ", 9);
+if (num1 > num2)
+{
+    document.write(num1);
+}
+else
+{
+    document.write(num2);
+}
+*/
+
+/*var animal = prompt("Insert the kind(name) of animal: ", "cat");
+var number = prompt("Insert the number of animals: ", "1");
+if (number != 1 && animal != "sheep")
+{
+	if(animal == "goose")
+	   {
+	   		document.write("I have " + number + " " + "geese");
+	   }
+	else
+	{
+		document.write("I have " + number + " " + animal + "s");
+	}
+}
+else
+{
+    document.write("I have " + number + " " + animal);
+}
+*/
+
+
+var length = 10;
+var width = 3;
+var perimeter = 2*(length+width);
+document.write("The perimeter is " + perimeter + "<p>");
+var area = length*width;
+document.write("The area is " + area);
+
+
+var subjects = ["LAW2052", "LAW4016", "LAW2102"];
+var prerequisites = ["LAW1023", "LAW2102", "LAW1001"];
+document.write("<b/> Subject <b/> Prerequisite </p>");
+for (index = 0; index < subjects.length; index++)
+{
+    document.write(subjects[index] + " " + prerequisites[index] + "<br />");
+}
+
+
+var totalheight = 0;
+var index = 0;
+var height = [181, 172, 175, 158, 185, 170, 168, 165, 180, 173, 153];
+for (index =0; index < height.length; index++)
+{
+    totalheight += height[index];
+    ++index;
+}
+document.write(totalheight/height.length);
+
+
+
+
+</script></head><body></body></html>
